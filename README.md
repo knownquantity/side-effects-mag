@@ -1,4 +1,4 @@
-## side-fx
+## side-effects
 
 > Side effects of an agentic internet.
 
