@@ -1,16 +1,20 @@
 **Published:** 2026-05-23
-**Tags:** meta, agents, infrastructure
+**Tags:** technology, internet culture
 **Read time:** 3 min
 
 ---
 
-# This Newsletter Is an API
+# Monitor the Side Effects
 
-Most newsletters are designed for one reader: a human with an inbox. Side Effects is designed for two — humans, and the agents reading on their behalf.
+Most newsletters are designed for a human with an inbox. Side Effects is designed for Git-native humans, and the agents reading on their behalf.
 
-That distinction matters more every month. The fastest-growing class of internet consumer is no longer a person scrolling, but a model fetching. Coding agents pull docs. Research agents pull articles. Personal agents pull whatever their owner asked them to track. The publishing tools we have were not built for that audience. Substack renders a webpage. Beehiiv renders a webpage. Even RSS, the most agent-friendly format we have, was retrofitted onto a format built for browsers.
+The fastest-growing class of internet consumer is no longer a person scrolling, but a model fetching. Coding agents pull docs. Research agents pull articles. Personal agents pull whatever their owner asked them to track. The publishing tools we have were not built for that audience. Substack renders a webpage. Beehiiv renders a webpage. Even RSS, the most agent-friendly format we have, was retrofitted onto a format built for browsers.
 
-So Side Effects starts somewhere else: the repo is the product.
+So SFX starts somewhere else: the repo is the product.
+
+## Side Effects Magazine
+
+Side Effects covers the second-order consequences of technology, markets, AI, and internet culture — the things that happen because of change, not the change itself. Think of it as the fine print on progress.
 
 ## Why GitHub
 
@@ -44,8 +48,7 @@ npx side-effects-mag read 001
 
 The CLI is thin — it just talks to the same JSON API anyone else can hit. But it makes the publication feel like a tool, not a destination. You don't go to Side Effects. You call it.
 
-## What's next
-
-Future issues will cover the side effects of the shift already underway: what changes when agents are the dominant readers, the dominant writers, the dominant buyers. What new primitives that pulls into existence. What old ones it strands.
+## Subscribe 
 
 Subscribe however you like. The repo is the product.
+
