@@ -1,6 +1,6 @@
 # side-effects
 
-CLI for the [Side Effects](https://github.com/knownquantity/side-effects) newsletter.
+CLI for the [Side Effects](https://github.com/knownquantity/side-effects-mag) newsletter.
 
 > SFX of an agentic internet.
 

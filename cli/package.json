@@ -1,6 +1,6 @@
 {
   "name": "side-effects-mag",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SFX of an agentic internet",
   "type": "module",
   "bin": {
