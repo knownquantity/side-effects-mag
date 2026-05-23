@@ -9,7 +9,7 @@ A newsletter that lives as a GitHub repo, a public JSON API, and a CLI. No platf
 ## Subscribe
 
 ```sh
-npx @knownquantity/side-effects subscribe
+npx side-fx subscribe
 ```
 
 Or via email: [buttondown.email/sideeffects](https://buttondown.email/sideeffects)
@@ -17,8 +17,8 @@ Or via email: [buttondown.email/sideeffects](https://buttondown.email/sideeffect
 ## Read
 
 ```sh
-npx @knownquantity/side-effects latest        # the 3 most recent issues
-npx @knownquantity/side-effects read 001      # read issue 001 in your terminal
+npx side-fx latest        # the 3 most recent issues
+npx side-fx read 001      # read issue 001 in your terminal
 ```
 
 Or browse [`/articles`](./articles) directly.
@@ -38,7 +38,7 @@ GET  https://raw.githubusercontent.com/knownquantity/side-effects/main/tags/{tag
 Inspect endpoints from the CLI:
 
 ```sh
-npx @knownquantity/side-effects api
+npx side-fx api
 ```
 
 ### Sample response
@@ -52,7 +52,7 @@ npx @knownquantity/side-effects api
   "author": "Side Effects",
   "canonical_url": "https://raw.githubusercontent.com/knownquantity/side-effects/main/feed.json",
   "subscribe_url": "https://buttondown.email/sideeffects",
-  "cli": "npx @knownquantity/side-effects",
+  "cli": "npx side-fx",
   "updated": "2026-05-23",
   "version": 1,
   "articles": [

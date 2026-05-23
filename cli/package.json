@@ -1,13 +1,25 @@
 {
-  "name": "@knownquantity/side-effects",
+  "name": "side-fx",
   "version": "0.1.0",
   "description": "SFX of an agentic internet",
   "type": "module",
-  "bin": { "side-effects": "./index.mjs" },
+  "bin": {
+    "side-fx": "index.mjs"
+  },
   "main": "./index.mjs",
-  "engines": { "node": ">=18" },
-  "files": ["index.mjs", "README.md"],
-  "keywords": ["newsletter", "cli", "agents", "side-effects"],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.mjs",
+    "README.md"
+  ],
+  "keywords": [
+    "newsletter",
+    "cli",
+    "agents",
+    "side-effects"
+  ],
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
