@@ -1,0 +1,73 @@
+name: Pitch
+description: Propose an article for Side Effects Magazine.
+title: "Pitch: "
+labels: ["pitch"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for pitching. Read [CONTRIBUTING.md](https://github.com/1999labs/side-effects-mag/blob/main/CONTRIBUTING.md) first if you haven't — it explains what we look for and what we don't publish.
+
+        Aim for ~200 words total across the fields below. We respond within 7 days, even if it's a no.
+
+  - type: input
+    id: headline
+    attributes:
+      label: Headline
+      description: Working title. Will probably change.
+      placeholder: The hidden cost of <thing>
+    validations:
+      required: true
+
+  - type: textarea
+    id: thesis
+    attributes:
+      label: Thesis
+      description: What's the claim? What's the evidence? What would surprise the reader? One paragraph.
+      placeholder: |
+        The piece argues that…
+        Drawing on…
+        Most readers don't know that…
+    validations:
+      required: true
+
+  - type: textarea
+    id: why_now
+    attributes:
+      label: Why now
+      description: Is there a specific moment, event, or shift this responds to?
+      placeholder: An event, an emerging pattern, a number that crossed a threshold…
+    validations:
+      required: true
+
+  - type: textarea
+    id: needs
+    attributes:
+      label: What you'd need
+      description: Optional. A deadline, interview access, research time, anything we'd help with.
+    validations:
+      required: false
+
+  - type: textarea
+    id: bio
+    attributes:
+      label: Bio and writing samples
+      description: A short bio (1–2 sentences) and one or two links to writing you've published. Especially helpful for first-time contributors.
+      placeholder: |
+        Bio: …
+        Writing samples:
+        - https://…
+        - https://…
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgments
+    attributes:
+      label: Process acknowledgment
+      description: A few things we want to make sure you've seen before submitting.
+      options:
+        - label: I've read [CONTRIBUTING.md](https://github.com/1999labs/side-effects-mag/blob/main/CONTRIBUTING.md), including the scope and the public-process notes.
+          required: true
+        - label: I understand that if accepted, my piece will be published under CC BY 4.0 (I retain copyright; readers can share with credit).
+          required: true

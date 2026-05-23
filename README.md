@@ -95,6 +95,8 @@ npx side-effects-mag api
 
 Anyone can contribute. The internet's fine print shouldn't have a single author.
 
+Pitches are issues. Submissions are pull requests. Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening either.
+
 ---
 
 ## License
