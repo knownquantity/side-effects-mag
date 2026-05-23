@@ -1,6 +1,6 @@
 # Side Effects Magazine
 
-An open-source magazine about the fine print on technological progress. Progress is interesting. So is everything in its wake.
+An open-source publication exploring frontier technologies and their cultural n^th-order side effects.
 
 ---
 
