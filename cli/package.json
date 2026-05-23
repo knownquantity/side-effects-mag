@@ -1,10 +1,10 @@
 {
-  "name": "@noahmclaughlin/side-effects",
+  "name": "side-effects-mag",
   "version": "0.1.0",
   "description": "SFX of an agentic internet",
   "type": "module",
   "bin": {
-    "side-effects": "index.mjs"
+    "side-effects-mag": "index.mjs"
   },
   "main": "./index.mjs",
   "engines": {
