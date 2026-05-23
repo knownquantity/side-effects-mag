@@ -1,8 +1,6 @@
 # Side Effects Magazine
 
-Writing about the second-order consequences of technology, markets, AI, and internet culture. The things that happen because of change, not the change itself. Think of it as the fine print on progress.
-
-A newsletter that lives as a GitHub repo, a public JSON API, and a CLI. No platform, no signup wall, no tracking. The repo is the product.
+An open-source magazine about the fine print on technological progress. Contributions welcome. 
 
 ---
 
@@ -92,6 +90,10 @@ npx side-effects-mag api
 | #   | Title                                                                | Date       | Tags                            |
 | --- | -------------------------------------------------------------------- | ---------- | ------------------------------- |
 | 001 | [This Newsletter Is an API](./articles/001-this-newsletter-is-an-api.md) | 2026-05-23 | Technology, Culture    |
+
+## Contribute 
+
+Anyone can contribute. The internet's fine print shouldn't have a single author.
 
 ---
 
