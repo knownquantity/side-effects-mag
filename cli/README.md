@@ -2,8 +2,6 @@
 
 CLI for [Side Effects Magazine](https://github.com/knownquantity/side-effects-mag).
 
-> The SFX of progress.
-
 ## Use
 
 ```sh

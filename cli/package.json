@@ -1,7 +1,7 @@
 {
   "name": "side-effects-mag",
-  "version": "0.1.2",
-  "description": "The SFX of progress",
+  "version": "0.1.3",
+  "description": "Side Effects Magazine",
   "type": "module",
   "bin": {
     "side-effects-mag": "index.mjs"

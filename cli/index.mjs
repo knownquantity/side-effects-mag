@@ -26,8 +26,7 @@ const blank = () => process.stdout.write('\n')
 
 function header() {
   blank()
-  out(`${accent('◈')} ${bold.white('Side Effects Magazine')}`)
-  out(dim('The SFX of progress'))
+  out(`${accent('▌')} ${bold.white('Side Effects Magazine')}`)
   blank()
 }
 

@@ -1,7 +1,5 @@
 # Side Effects Magazine
 
-> The SFX of progress.
-
 A newsletter that lives as a GitHub repo, a public JSON API, and a CLI. No platform, no signup wall, no tracking. The repo is the product.
 
 ---
