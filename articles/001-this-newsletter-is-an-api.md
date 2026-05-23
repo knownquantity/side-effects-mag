@@ -4,7 +4,7 @@
 
 ---
 
-# Monitor the Side Effects
+# This Newsletter Is an API
 
 Most newsletters are designed for a human with an inbox. Side Effects is designed for Git-native humans, and the agents reading on their behalf.
 
