@@ -7,11 +7,11 @@ CLI for the [Side Effects](https://github.com/knownquantity/side-effects) newsle
 ## Use
 
 ```sh
-npx side-fx                 # help
-npx side-fx subscribe       # subscribe via email
-npx side-fx latest          # the 3 most recent issues
-npx side-fx read 001        # read an issue in your terminal
-npx side-fx api             # show the JSON endpoints
+npx @noahmclaughlin/side-effects                 # help
+npx @noahmclaughlin/side-effects subscribe       # subscribe via email
+npx @noahmclaughlin/side-effects latest          # the 3 most recent issues
+npx @noahmclaughlin/side-effects read 001        # read an issue in your terminal
+npx @noahmclaughlin/side-effects api             # show the JSON endpoints
 ```
 
 Requires Node 18+.
