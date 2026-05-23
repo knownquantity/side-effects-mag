@@ -7,6 +7,7 @@ import fetch from 'node-fetch'
 const GITHUB_USERNAME = 'knownquantity'
 const REPO = 'side-effects'
 const BUTTONDOWN_URL = 'https://buttondown.email/sideeffects'
+const SUBSCRIBE_API = 'https://sideeffects-api.vercel.app/api/subscribe'
 
 const RAW_BASE = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO}/main`
 const FEED_URL = `${RAW_BASE}/feed.json`
@@ -217,37 +218,24 @@ async function subscribe(emailArg) {
     process.exit(1)
   }
 
-  const apiKey = process.env.BUTTONDOWN_API_KEY
-  if (!apiKey) {
-    blank()
-    out(dim('subscribe at:'))
-    out(`  ${accent(BUTTONDOWN_URL)}`)
-    blank()
-    return
-  }
-
   const spinner = ora({ text: dim('subscribing…'), indent: 2, color: 'green' }).start()
   try {
-    const res = await fetch('https://api.buttondown.email/v1/subscribers', {
+    const res = await fetch(SUBSCRIBE_API, {
       method: 'POST',
-      headers: {
-        Authorization: `Token ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email_address: email }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, _hp: '' }),
     })
     spinner.stop()
-    if (res.ok || res.status === 201) {
-      blank()
-      out(`${accent('subscribed.')} ${dim(email)}`)
-      blank()
-      return
-    }
-    if (res.status === 400) {
+    if (res.ok) {
       const body = await res.json().catch(() => ({}))
-      const msg = body?.detail || body?.email_address?.[0] || 'already subscribed or invalid email'
+      if (body.ok) {
+        blank()
+        out(`${accent('subscribed.')} ${dim(email)}`)
+        blank()
+        return
+      }
       blank()
-      out(dim(msg))
+      out(dim(body.message || 'already subscribed.'))
       out(dim(`also available: ${BUTTONDOWN_URL}`))
       blank()
       return

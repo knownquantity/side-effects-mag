@@ -18,7 +18,7 @@ Requires Node 18+.
 
 ## Subscribing
 
-`subscribe` posts to the Buttondown API if `BUTTONDOWN_API_KEY` is set in the environment of whoever is hosting the publication. End readers do **not** need a key — the command falls back to opening the public subscribe URL.
+`subscribe` posts to a small Vercel function that proxies to Buttondown. No API key lives in this package. If the proxy is unreachable, the command falls back to printing the public subscribe URL.
 
 ## License
 
