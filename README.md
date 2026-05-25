@@ -92,6 +92,7 @@ npx side-effects-mag api
 | #   | Title                                                                | Date       | Tags                            |
 | --- | -------------------------------------------------------------------- | ---------- | ------------------------------- |
 | 001 | [An Open-Source Publication](./articles/001-an-open-source-magazine.md) | 2026-05-23 | Technology, Culture |
+| 002 | [The CDN Tax](./articles/002-the-cdn-tax.md) | 2026-05-23 | Publishing, Economics, Content |
 
 ## Contribute 
 

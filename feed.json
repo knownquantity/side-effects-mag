@@ -5,7 +5,7 @@
   "canonical_url": "https://raw.githubusercontent.com/1999labs/side-effects-mag/main/feed.json",
   "subscribe_url": "https://buttondown.email/sideeffects",
   "cli": "npx side-effects-mag",
-  "updated": "2026-05-23",
+  "updated": "2026-05-24",
   "version": 1,
   "articles": [
     {
@@ -18,6 +18,17 @@
       "read_time": "4 min",
       "version": 1,
       "canonical_url": "https://raw.githubusercontent.com/1999labs/side-effects-mag/main/articles/001-an-open-source-magazine.md"
+    },
+    {
+      "id": 2,
+      "title": "The CDN Tax",
+      "slug": "002-the-cdn-tax",
+      "published": "2026-05-24",
+      "tags": ["Publishing", "Economics", "Content"],
+      "summary": "The economics of publishing content online.",
+      "read_time": "6 min",
+      "version": 1,
+      "canonical_url": "https://raw.githubusercontent.com/1999labs/side-effects-mag/main/articles/002-the-cdn-tax.md"
     }
   ]
 }
