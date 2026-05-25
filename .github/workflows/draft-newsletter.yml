@@ -39,9 +39,16 @@ jobs:
           SUBJECT:  ${{ steps.article.outputs.title }}
           URL:      ${{ steps.article.outputs.url }}
         run: |
+          echo "DEBUG token length: ${#BD_TOKEN}"
+          echo "DEBUG token is empty: $([ -z "$BD_TOKEN" ] && echo yes || echo no)"
+
           jq -n --arg s "$SUBJECT" --arg u "$URL" \
             '{subject: $s, body: "Read the new issue: \($u)", status: "draft"}' \
-          | curl -fsS -X POST https://api.buttondown.email/v1/emails \
+          | curl -sS -o /tmp/bd.body -w "HTTP %{http_code}\n" \
+              -X POST https://api.buttondown.email/v1/emails \
               -H "Authorization: Token $BD_TOKEN" \
               -H "Content-Type: application/json" \
               --data @-
+
+          echo "--- response body ---"
+          cat /tmp/bd.body
